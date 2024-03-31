@@ -1,0 +1,46 @@
+* NGSPICE file created from opamp.ext - technology: sky130A
+
+.subckt opamp_ext vdd out inp inn ibiasn vss
+X0 vss ibiasn ibiasn vss sky130_fd_pr__nfet_01v8 ad=11.6 pd=80.58 as=11.6 ps=80.58 w=40 l=1
+X1 m1_7724_4448# inn m1_8334_5906# vss sky130_fd_pr__nfet_01v8 ad=11.6 pd=80.58 as=11.6 ps=80.58 w=40 l=1
+X2 m1_7724_4448# inp m1_6170_6258# vss sky130_fd_pr__nfet_01v8 ad=11.6 pd=80.58 as=11.6 ps=80.58 w=40 l=1
+X3 vdd m1_8334_5906# m1_8334_5906# vdd sky130_fd_pr__pfet_01v8 ad=5.8 pd=40.58 as=5.8 ps=40.58 w=20 l=0.5
+X4 vss ibiasn m1_7724_4448# vss sky130_fd_pr__nfet_01v8 ad=11.6 pd=80.58 as=11.6 ps=80.58 w=40 l=1
+X5 vss ibiasn m1_7724_4448# vss sky130_fd_pr__nfet_01v8 ad=11.6 pd=80.58 as=11.6 ps=80.58 w=40 l=1
+X6 vss ibiasn out vss sky130_fd_pr__nfet_01v8 ad=11.6 pd=80.58 as=11.6 ps=80.58 w=40 l=1
+X7 vdd m1_8334_5906# m1_6170_6258# vdd sky130_fd_pr__pfet_01v8 ad=5.8 pd=40.58 as=5.8 ps=40.58 w=20 l=0.5
+X8 vdd m1_6170_6258# out vdd sky130_fd_pr__pfet_01v8 ad=5.8 pd=40.58 as=5.8 ps=40.58 w=20 l=0.5
+C0 m1_8334_5906# m1_6170_6258# 1.717437f
+C1 m1_8334_5906# inp 0.002675f
+C2 m1_8334_5906# m1_7724_4448# 2.189434f
+C3 m1_8334_5906# inn 0.868036f
+C4 vdd m1_6170_6258# 3.070693f
+C5 vdd m1_7724_4448# 0.003134f
+C6 vdd inn 0.00629f
+C7 m1_8334_5906# out 0.818384f
+C8 m1_8334_5906# ibiasn 0.001415f
+C9 inp m1_6170_6258# 0.867091f
+C10 m1_7724_4448# m1_6170_6258# 3.938312f
+C11 vdd out 2.937594f
+C12 inn m1_6170_6258# 0.072016f
+C13 inp m1_7724_4448# 0.944646f
+C14 inp inn 0.032568f
+C15 inn m1_7724_4448# 0.867763f
+C16 m1_6170_6258# out 2.295279f
+C17 inp out 0.083426f
+C18 ibiasn m1_6170_6258# 0.003701f
+C19 m1_7724_4448# out 1.118944f
+C20 inn out 0.07251f
+C21 inp ibiasn 0.013092f
+C22 ibiasn m1_7724_4448# 2.187538f
+C23 m1_8334_5906# vdd 4.940537f
+C24 ibiasn out 2.139877f
+C25 vdd vss 23.261744f
+C26 m1_6170_6258# vss 5.080033f
+C27 m1_8334_5906# vss 5.070668f
+C28 out vss 6.978393f
+C29 m1_7724_4448# vss 20.980135f
+C30 inp vss 0.601188f
+C31 inn vss 0.606819f
+C32 ibiasn vss 10.163304f
+.ends

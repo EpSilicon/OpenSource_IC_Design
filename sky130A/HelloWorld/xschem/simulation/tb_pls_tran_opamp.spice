@@ -1,0 +1,65 @@
+** sch_path: /home/erwann/design_workspace/sky130A/HelloWorld/xschem/tb_pls_tran_opamp.sch
+**.subckt tb_pls_tran_opamp
+x1 net3 out inp inn net1 GND opamp
+V1 vdd GND 1.8
+I0 vdd net1 50u
+V2 inp inn pwl 0 -0.2 15n 0.2 30n -0.2 45n 0.2
+V3 inn GND 1.2
+x2 net4 out2 inp inn net2 GND opamp_ext
+I1 vdd net2 50u
+Vx1 vdd net3 0
+.save i(vx1)
+Vx2 vdd net4 0
+.save i(vx2)
+**** begin user architecture code
+.lib /home/erwann/.volare//sky130A/libs.tech/ngspice/sky130.lib.spice tt
+
+
+.tran 100p 50n
+.control
+savecurrents
+save inn inp out out2 i(Vx1) i(Vx2)
+run
+write tb_pls_tran_opamp.raw
+.endc
+
+
+**** end user architecture code
+**.ends
+
+* expanding   symbol:  opamp.sym # of pins=6
+** sym_path: /home/erwann/design_workspace/sky130A/HelloWorld/xschem/opamp.sym
+** sch_path: /home/erwann/design_workspace/sky130A/HelloWorld/xschem/opamp.sch
+.subckt opamp vdd out inp inn ibiasn vss
+*.ipin inn
+*.ipin inp
+*.iopin vdd
+*.iopin vss
+*.iopin ibiasn
+*.opin out
+XM1 pbias inn tail vss sky130_fd_pr__nfet_01v8 L=1 W=40 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM2 outz inp tail vss sky130_fd_pr__nfet_01v8 L=1 W=40 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM3 pbias pbias vdd vdd sky130_fd_pr__pfet_01v8 L=0.5 W=20 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM4 outz pbias vdd vdd sky130_fd_pr__pfet_01v8 L=0.5 W=20 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM5 out outz vdd vdd sky130_fd_pr__pfet_01v8 L=0.5 W=20 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM6[1] tail ibiasn vss vss sky130_fd_pr__nfet_01v8 L=1 W=40 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM6[0] tail ibiasn vss vss sky130_fd_pr__nfet_01v8 L=1 W=40 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM7 out ibiasn vss vss sky130_fd_pr__nfet_01v8 L=1 W=40 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM8 ibiasn ibiasn vss vss sky130_fd_pr__nfet_01v8 L=1 W=40 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+.ends
+
+
+* expanding   symbol:  opamp_ext.sym # of pins=6
+** sym_path: /home/erwann/design_workspace/sky130A/HelloWorld/xschem/opamp.sym
+.include /home/erwann/design_workspace/sky130A/HelloWorld/magic/opamp_ext.spice
+.GLOBAL GND
+.end

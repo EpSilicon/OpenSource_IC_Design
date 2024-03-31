@@ -1,0 +1,1 @@
+/home/erwann/.volare//sky130A/libs.tech/netgen/sky130A_setup.tcl

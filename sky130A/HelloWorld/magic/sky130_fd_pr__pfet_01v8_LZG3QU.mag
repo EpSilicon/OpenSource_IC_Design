@@ -1,0 +1,75 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1711879029
+<< nwell >>
+rect -246 -2184 246 2184
+<< pmos >>
+rect -50 -1964 50 2036
+<< pdiff >>
+rect -108 2024 -50 2036
+rect -108 -1952 -96 2024
+rect -62 -1952 -50 2024
+rect -108 -1964 -50 -1952
+rect 50 2024 108 2036
+rect 50 -1952 62 2024
+rect 96 -1952 108 2024
+rect 50 -1964 108 -1952
+<< pdiffc >>
+rect -96 -1952 -62 2024
+rect 62 -1952 96 2024
+<< nsubdiff >>
+rect -210 2114 -114 2148
+rect 114 2114 210 2148
+rect -210 2051 -176 2114
+rect 176 2051 210 2114
+rect -210 -2114 -176 -2051
+rect 176 -2114 210 -2051
+rect -210 -2148 -114 -2114
+rect 114 -2148 210 -2114
+<< nsubdiffcont >>
+rect -114 2114 114 2148
+rect -210 -2051 -176 2051
+rect 176 -2051 210 2051
+rect -114 -2148 114 -2114
+<< poly >>
+rect -50 2036 50 2062
+rect -50 -2011 50 -1964
+rect -50 -2045 -34 -2011
+rect 34 -2045 50 -2011
+rect -50 -2061 50 -2045
+<< polycont >>
+rect -34 -2045 34 -2011
+<< locali >>
+rect -210 2114 -114 2148
+rect 114 2114 210 2148
+rect -210 2051 -176 2114
+rect 176 2051 210 2114
+rect -96 2024 -62 2040
+rect -96 -1968 -62 -1952
+rect 62 2024 96 2040
+rect 62 -1968 96 -1952
+rect -50 -2045 -34 -2011
+rect 34 -2045 50 -2011
+rect -210 -2114 -176 -2051
+rect 176 -2114 210 -2051
+rect -210 -2148 -114 -2114
+rect 114 -2148 210 -2114
+<< viali >>
+rect -96 -1952 -62 2024
+rect -34 -2045 34 -2011
+<< metal1 >>
+rect -102 2024 -56 2036
+rect -102 -1952 -96 2024
+rect -62 -1952 -56 2024
+rect -102 -1964 -56 -1952
+rect -46 -2011 46 -2005
+rect -46 -2045 -34 -2011
+rect 34 -2045 46 -2011
+rect -46 -2051 46 -2045
+<< properties >>
+string FIXED_BBOX -193 -2131 193 2131
+string gencell sky130_fd_pr__pfet_01v8
+string library sky130
+string parameters w 20.0 l 0.5 m 1 nf 1 diffcov 100 polycov 100 guard 1 glc 1 grc 1 gtc 1 gbc 1 tbcov 100 rlcov 100 topc 0 botc 1 poverlap 0 doverlap 1 lmin 0.15 wmin 0.42 compatible {sky130_fd_pr__pfet_01v8  sky130_fd_pr__pfet_01v8_lvt sky130_fd_pr__pfet_01v8_hvt  sky130_fd_pr__pfet_g5v0d10v5} full_metal 1 viasrc 0 viadrn 100 viagate 100 viagb 0 viagr 0 viagl 0 viagt 0
+<< end >>

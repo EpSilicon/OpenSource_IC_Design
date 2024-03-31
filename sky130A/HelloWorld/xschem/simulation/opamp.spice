@@ -1,0 +1,14 @@
+** sch_path: /home/erwann/design_worksapce/sky130A/HelloWorld/xschem/opamp.sch
+.subckt opamp vdd out inp inn ibiasn vss
+*.PININFO inn:I inp:I vdd:B vss:B ibiasn:B out:O
+XM1 pbias inn tail vss sky130_fd_pr__nfet_01v8 L=1 W=40 nf=1 m=1
+XM2 outz inp tail vss sky130_fd_pr__nfet_01v8 L=1 W=40 nf=1 m=1
+XM3 pbias pbias vdd vdd sky130_fd_pr__pfet_01v8 L=0.5 W=20 nf=1 m=1
+XM4 outz pbias vdd vdd sky130_fd_pr__pfet_01v8 L=0.5 W=20 nf=1 m=1
+XM5 out outz vdd vdd sky130_fd_pr__pfet_01v8 L=0.5 W=20 nf=1 m=1
+XM6_1 tail ibiasn vss vss sky130_fd_pr__nfet_01v8 L=1 W=40 nf=1 m=1
+XM6_0 tail ibiasn vss vss sky130_fd_pr__nfet_01v8 L=1 W=40 nf=1 m=1
+XM7 out ibiasn vss vss sky130_fd_pr__nfet_01v8 L=1 W=40 nf=1 m=1
+XM8 ibiasn ibiasn vss vss sky130_fd_pr__nfet_01v8 L=1 W=40 nf=1 m=1
+.ends
+.end

@@ -1,0 +1,29 @@
+* NGSPICE file created from opamp.ext - technology: sky130A
+
+.subckt sky130_fd_pr__nfet_01v8_KWM3S5 a_n260_n4143# a_n100_n4057# a_n158_n3969# a_100_n3969#
+X0 a_100_n3969# a_n100_n4057# a_n158_n3969# a_n260_n4143# sky130_fd_pr__nfet_01v8 ad=11.6 pd=80.58 as=11.6 ps=80.58 w=40 l=1
+**devattr s=464000,16116 d=464000,16116
+.ends
+
+.subckt sky130_fd_pr__nfet_01v8_K2PRWZ a_n260_n4143# a_n100_n4057# a_n158_n3969# a_100_n3969#
+X0 a_100_n3969# a_n100_n4057# a_n158_n3969# a_n260_n4143# sky130_fd_pr__nfet_01v8 ad=11.6 pd=80.58 as=11.6 ps=80.58 w=40 l=1
+**devattr s=464000,16116 d=464000,16116
+.ends
+
+.subckt sky130_fd_pr__pfet_01v8_LZG3QU a_n108_n1964# w_n246_n2184# a_50_n1964# a_n50_n2061#
+X0 a_50_n1964# a_n50_n2061# a_n108_n1964# w_n246_n2184# sky130_fd_pr__pfet_01v8 ad=5.8 pd=40.58 as=5.8 ps=40.58 w=20 l=0.5
+**devattr s=232000,8116 d=232000,8116
+.ends
+
+.subckt opamp vdd out inp inn ibiasn vss
+Xsky130_fd_pr__nfet_01v8_KWM3S5_0 vss ibiasn ibiasn vss sky130_fd_pr__nfet_01v8_KWM3S5
+XXM1 vss inn m1_8334_5906# m1_7724_4448# sky130_fd_pr__nfet_01v8_K2PRWZ
+XXM2 vss inp m1_6170_6258# m1_7724_4448# sky130_fd_pr__nfet_01v8_K2PRWZ
+XXM3 m1_8334_5906# vdd vdd m1_8334_5906# sky130_fd_pr__pfet_01v8_LZG3QU
+XXM6_0 vss ibiasn m1_7724_4448# vss sky130_fd_pr__nfet_01v8_KWM3S5
+XXM6_1 vss ibiasn m1_7724_4448# vss sky130_fd_pr__nfet_01v8_KWM3S5
+XXM7 vss ibiasn out vss sky130_fd_pr__nfet_01v8_KWM3S5
+Xsky130_fd_pr__pfet_01v8_LZG3QU_0 m1_6170_6258# vdd vdd m1_8334_5906# sky130_fd_pr__pfet_01v8_LZG3QU
+Xsky130_fd_pr__pfet_01v8_LZG3QU_1 out vdd vdd m1_6170_6258# sky130_fd_pr__pfet_01v8_LZG3QU
+.ends
+
