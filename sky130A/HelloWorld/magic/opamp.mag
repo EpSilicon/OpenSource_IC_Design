@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1711887509
+timestamp 1713001170
 << locali >>
 rect 10247 7063 10364 7098
 rect 10254 6677 10371 6712
@@ -134,14 +134,6 @@ rect 9563 4022 9677 6504
 rect 9563 3970 9564 4022
 rect 9674 3970 9677 4022
 rect 9563 3962 9677 3970
-use sky130_fd_pr__nfet_01v8  sky130_fd_pr__nfet_01v8_0
-timestamp 1711887509
-transform 1 0 2236 0 1 -3060
-box 0 0 1 1
-use sky130_fd_pr__nfet_01v8  sky130_fd_pr__nfet_01v8_1
-timestamp 1711887509
-transform 1 0 2237 0 1 -3060
-box 0 0 1 1
 use sky130_fd_pr__nfet_01v8_KWM3S5  sky130_fd_pr__nfet_01v8_KWM3S5_0
 timestamp 1711879029
 transform 0 1 8319 -1 0 3376
@@ -166,14 +158,6 @@ use sky130_fd_pr__pfet_01v8_LZG3QU  XM3
 timestamp 1711879029
 transform 0 1 8223 -1 0 7159
 box -246 -2184 246 2184
-use sky130_fd_pr__nfet_01v8  XM6[0]
-timestamp 1711887509
-transform 1 0 2396 0 1 -3325
-box 0 0 1 1
-use sky130_fd_pr__nfet_01v8  XM6[1]
-timestamp 1711887509
-transform 1 0 2395 0 1 -3325
-box 0 0 1 1
 use sky130_fd_pr__nfet_01v8_KWM3S5  XM6_0
 timestamp 1711879029
 transform 0 1 8319 -1 0 4348

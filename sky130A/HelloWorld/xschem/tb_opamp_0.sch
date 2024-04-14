@@ -5,50 +5,6 @@ K {}
 V {}
 S {}
 E {}
-B 2 950 -400 1750 0 {flags=graph
-y1=-0.00021
-y2=-0.00014
-ypos1=0
-ypos2=2
-divy=5
-subdivy=1
-unity=1
-x1=-0.20616523
-x2=0.19383477
-divx=5
-subdivx=1
-xlabmag=1.0
-ylabmag=1.0
-node=i(v1)
-color=7
-dataset=-1
-unitx=1
-logx=0
-logy=0
-linewidth_mult=3.6}
-B 2 950 -820 1750 -420 {flags=graph
-y1=0
-y2=2
-ypos1=0
-ypos2=2
-divy=5
-subdivy=1
-unity=1
-x1=-0.20616523
-x2=0.19383477
-divx=5
-subdivx=1
-xlabmag=1.0
-ylabmag=1.0
-node="out
-inp
-inn"
-color="4 5 6"
-dataset=-1
-unitx=1
-logx=0
-logy=0
-linewidth_mult=3.6}
 N 750 -110 750 -80 {
 lab=GND}
 N 750 -460 750 -340 {
@@ -103,12 +59,10 @@ only_toplevel=true
 value="
 .dc V2 -0.2 0.2 0.001
 .control
+set color0=white
 save all
 run
-write tb_opamp.raw
+plot v(inp) v(inn) v(out) 
+plot i(v1)
 .endc
 " }
-C {devices/launcher.sym} 1330 -890 0 0 {name=h5
-descr="load waves" 
-tclcommand="xschem raw_read $netlist_dir/tb_opamp.raw dc"
-}
