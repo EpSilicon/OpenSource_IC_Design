@@ -1,4 +1,4 @@
-** sch_path: /home/erwann/design_worksapce/sky130A/HelloWorld/xschem/opamp.sch
+** sch_path: /home/erwann/design_workspace/sky130A/HelloWorld/xschem/opamp.sch
 .subckt opamp vdd out inp inn ibiasn vss
 *.PININFO inn:I inp:I vdd:B vss:B ibiasn:B out:O
 XM1 pbias inn tail vss sky130_fd_pr__nfet_01v8 L=1 W=40 nf=1 m=1

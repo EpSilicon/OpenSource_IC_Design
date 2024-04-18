@@ -27,7 +27,8 @@ logx=0
 logy=0
 color="21 16"
 node="i(vx1)
-i(vx2)"}
+i(vx2)"
+linewidth_mult=3.6}
 B 2 950 -820 1750 -420 {flags=graph
 y1=0
 y2=2
@@ -51,7 +52,7 @@ dataset=-1
 unitx=1
 logx=0
 logy=0
-}
+linewidth_mult=3.6}
 N 750 -110 750 -80 {
 lab=GND}
 N 710 -460 750 -460 {
@@ -151,9 +152,9 @@ descr="load waves"
 tclcommand="xschem raw_read $netlist_dir/tb_pls_opamp.raw dc"
 }
 C {opamp.sym} 760 -690 0 0 {name=x2
-schematic=opamp_ext
-spice_sym_def="tcleval(.include /home/erwann/design_workspace/sky130A/HelloWorld/magic/opamp_ext.spice)"
-*tclcommand="textwindow [../magic/opamp_ext.spice]"}
+schematic=opamp_ext_C
+spice_sym_def="tcleval(.include $env(HOME)/design_workspace/sky130A/HelloWorld/magic/opamp_ext_C.spice)"
+tclcommand="textwindow $env(HOME)/design_workspace/sky130A/HelloWorld/magic/opamp_ext_C.spice"}
 C {devices/isource.sym} 720 -840 0 0 {name=I1 value=50u}
 C {devices/gnd.sym} 760 -530 0 0 {name=l2 lab=GND}
 C {devices/lab_wire.sym} 620 -910 0 0 {name=p5 sig_type=std_logic lab=vdd}

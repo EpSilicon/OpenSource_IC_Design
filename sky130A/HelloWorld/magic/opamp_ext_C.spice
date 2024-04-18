@@ -1,0 +1,46 @@
+* NGSPICE file created from opamp.ext - technology: sky130A
+
+.subckt opamp_ext_C vdd out inp inn ibiasn vss
+X0 vss ibiasn ibiasn vss sky130_fd_pr__nfet_01v8 ad=11.6 pd=80.58 as=11.6 ps=80.58 w=40 l=1
+X1 m1_7724_4448# inn m1_8334_5906# vss sky130_fd_pr__nfet_01v8 ad=11.6 pd=80.58 as=11.6 ps=80.58 w=40 l=1
+X2 m1_7724_4448# inp m1_6170_6258# vss sky130_fd_pr__nfet_01v8 ad=11.6 pd=80.58 as=11.6 ps=80.58 w=40 l=1
+X3 vdd m1_8334_5906# m1_8334_5906# vdd sky130_fd_pr__pfet_01v8 ad=5.8 pd=40.58 as=5.8 ps=40.58 w=20 l=0.5
+X4 vss ibiasn m1_7724_4448# vss sky130_fd_pr__nfet_01v8 ad=11.6 pd=80.58 as=11.6 ps=80.58 w=40 l=1
+X5 vss ibiasn m1_7724_4448# vss sky130_fd_pr__nfet_01v8 ad=11.6 pd=80.58 as=11.6 ps=80.58 w=40 l=1
+X6 vss ibiasn out vss sky130_fd_pr__nfet_01v8 ad=11.6 pd=80.58 as=11.6 ps=80.58 w=40 l=1
+X7 vdd m1_8334_5906# m1_6170_6258# vdd sky130_fd_pr__pfet_01v8 ad=5.8 pd=40.58 as=5.8 ps=40.58 w=20 l=0.5
+X8 vdd m1_6170_6258# out vdd sky130_fd_pr__pfet_01v8 ad=5.8 pd=40.58 as=5.8 ps=40.58 w=20 l=0.5
+C0 m1_7724_4448# inp 0.944646f
+C1 out inp 0.083426f
+C2 out m1_7724_4448# 1.118943f
+C3 vdd m1_6170_6258# 3.070694f
+C4 vdd m1_8334_5906# 4.940537f
+C5 m1_6170_6258# m1_8334_5906# 1.717439f
+C6 ibiasn inp 0.013092f
+C7 ibiasn m1_7724_4448# 2.187538f
+C8 ibiasn out 2.139875f
+C9 inn vdd 0.00629f
+C10 inn m1_6170_6258# 0.072016f
+C11 inn m1_8334_5906# 0.868036f
+C12 m1_7724_4448# vdd 0.003134f
+C13 m1_6170_6258# inp 0.867091f
+C14 m1_7724_4448# m1_6170_6258# 3.938311f
+C15 inp m1_8334_5906# 0.002675f
+C16 m1_7724_4448# m1_8334_5906# 2.189434f
+C17 out vdd 2.937594f
+C18 out m1_6170_6258# 2.295279f
+C19 out m1_8334_5906# 0.818383f
+C20 inn inp 0.032568f
+C21 inn m1_7724_4448# 0.867763f
+C22 ibiasn m1_6170_6258# 0.003701f
+C23 ibiasn m1_8334_5906# 0.001415f
+C24 inn out 0.07251f
+C25 out vss 7.565182f
+C26 ibiasn vss 10.040664f
+C27 m1_7724_4448# vss 20.980135f
+C28 m1_8334_5906# vss 5.273708f
+C29 vdd vss 23.261744f
+C30 m1_6170_6258# vss 5.563833f
+C31 inp vss 0.601188f
+C32 inn vss 0.606819f
+.ends

@@ -5,12 +5,16 @@ V1 vdd GND 1.8
 I0 vdd net1 50u
 V2 inp inn pwl 0 -0.2 15n 0.2 30n -0.2 45n 0.2
 V3 inn GND 1.2
-x2 net4 out2 inp inn net2 GND opamp_ext
+x2 net4 out2 inp inn net2 GND opamp_ext_C
 I1 vdd net2 50u
 Vx1 vdd net3 0
 .save i(vx1)
 Vx2 vdd net4 0
 .save i(vx2)
+x3 net6 out3 inp inn net5 GND opamp_ext_RC
+I2 vdd net5 50u
+Vx3 vdd net6 0
+.save i(vx3)
 **** begin user architecture code
 .lib /home/erwann/.volare//sky130A/libs.tech/ngspice/sky130.lib.spice tt
 
@@ -18,7 +22,7 @@ Vx2 vdd net4 0
 .tran 100p 50n
 .control
 savecurrents
-save inn inp out out2 i(Vx1) i(Vx2)
+save inn inp out out2 out3 i(Vx1) i(Vx2) i(Vx3)
 run
 write tb_pls_tran_opamp.raw
 .endc
@@ -58,8 +62,12 @@ XM8 ibiasn ibiasn vss vss sky130_fd_pr__nfet_01v8 L=1 W=40 nf=1 ad='int((nf+1)/2
 .ends
 
 
-* expanding   symbol:  opamp_ext.sym # of pins=6
+* expanding   symbol:  opamp_ext_C.sym # of pins=6
 ** sym_path: /home/erwann/design_workspace/sky130A/HelloWorld/xschem/opamp.sym
-.include /home/erwann/design_workspace/sky130A/HelloWorld/magic/opamp_ext.spice
+.include /home/erwann/design_workspace/sky130A/HelloWorld/magic/opamp_ext_C.spice
+
+* expanding   symbol:  opamp_ext_RC.sym # of pins=6
+** sym_path: /home/erwann/design_workspace/sky130A/HelloWorld/xschem/opamp.sym
+.include /home/erwann/design_workspace/sky130A/HelloWorld/magic/opamp_ext_RC.spice
 .GLOBAL GND
 .end

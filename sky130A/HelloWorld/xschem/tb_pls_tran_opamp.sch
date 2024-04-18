@@ -25,9 +25,11 @@ dataset=-1
 unitx=1
 logx=0
 logy=0
-color="21 16"
+color="21 6 8"
 node="i(vx1)
-i(vx2)"}
+i(vx2)
+i(vx3)"
+linewidth_mult=2.8}
 B 2 950 -820 1750 -420 {flags=graph
 y1=0
 y2=2
@@ -45,13 +47,14 @@ ylabmag=1.0
 node="out
 inp
 inn
-out2"
-color="4 5 6 8"
+out2
+out3"
+color="4 5 6 20 21"
 dataset=-1
 unitx=1
 logx=0
 logy=0
-}
+linewidth_mult=2.8}
 N 750 -110 750 -80 {
 lab=GND}
 N 710 -460 750 -460 {
@@ -100,7 +103,7 @@ N 390 -110 550 -110 {
 lab=GND}
 N 550 -210 550 -200 {
 lab=inn}
-N 400 -910 720 -910 {
+N 540 -910 720 -910 {
 lab=vdd}
 N 790 -460 790 -430 {
 lab=vdd}
@@ -122,6 +125,32 @@ N 760 -800 800 -800 {
 lab=#net4}
 N 760 -800 760 -790 {
 lab=#net4}
+N 300 -590 300 -530 {
+lab=GND}
+N 260 -910 300 -910 {
+lab=vdd}
+N 260 -910 260 -870 {
+lab=vdd}
+N 400 -690 450 -690 {
+lab=out3}
+N 100 -730 200 -730 {
+lab=inp}
+N 100 -650 200 -650 {
+lab=inn}
+N 260 -810 260 -790 {
+lab=#net5}
+N 120 -910 260 -910 {
+lab=vdd}
+N 340 -910 340 -870 {
+lab=vdd}
+N 300 -910 340 -910 {
+lab=vdd}
+N 340 -810 340 -800 {
+lab=#net6}
+N 300 -800 340 -800 {
+lab=#net6}
+N 300 -800 300 -790 {
+lab=#net6}
 C {opamp.sym} 750 -240 0 0 {name=x1}
 C {devices/vsource.sym} 390 -300 0 0 {name=V1 value=1.8 savecurrent=false}
 C {devices/isource.sym} 710 -390 0 0 {name=I0 value=50u}
@@ -141,7 +170,7 @@ value="
 .tran 100p 50n
 .control
 savecurrents
-save inn inp out out2 i(Vx1) i(Vx2)
+save inn inp out out2 out3 i(Vx1) i(Vx2) i(Vx3)
 run
 write tb_pls_tran_opamp.raw
 .endc
@@ -151,9 +180,9 @@ descr="load waves"
 tclcommand="xschem raw_read $netlist_dir/tb_pls_tran_opamp.raw tran"
 }
 C {opamp.sym} 760 -690 0 0 {name=x2
-schematic=opamp_ext
-spice_sym_def="tcleval(.include /home/erwann/design_workspace/sky130A/HelloWorld/magic/opamp_ext.spice)"
-tclcommand="textwindow /home/erwann/design_workspace/sky130A/HelloWorld/magic/opamp_ext.spice"}
+schematic=opamp_ext_C
+spice_sym_def="tcleval(.include $env(HOME)/design_workspace/sky130A/HelloWorld/magic/opamp_ext_C.spice)"
+tclcommand="textwindow $env(HOME)/design_workspace/sky130A/HelloWorld/magic/opamp_ext_C.spice"}
 C {devices/isource.sym} 720 -840 0 0 {name=I1 value=50u}
 C {devices/gnd.sym} 760 -530 0 0 {name=l2 lab=GND}
 C {devices/lab_wire.sym} 620 -910 0 0 {name=p5 sig_type=std_logic lab=vdd}
@@ -164,3 +193,16 @@ C {devices/lab_wire.sym} 630 -650 0 0 {name=p8 sig_type=std_logic lab=inn
 }
 C {devices/vsource.sym} 790 -400 0 0 {name=Vx1 value=0 savecurrent=true}
 C {devices/vsource.sym} 800 -840 0 0 {name=Vx2 value=0 savecurrent=true}
+C {opamp.sym} 300 -690 0 0 {name=x3
+schematic=opamp_ext_RC
+spice_sym_def="tcleval(.include $env(HOME)/design_workspace/sky130A/HelloWorld/magic/opamp_ext_RC.spice)"
+tclcommand="textwindow $env(HOME)/design_workspace/sky130A/HelloWorld/magic/opamp_ext_RC.spice"}
+C {devices/isource.sym} 260 -840 0 0 {name=I2 value=50u}
+C {devices/gnd.sym} 300 -530 0 0 {name=l3 lab=GND}
+C {devices/lab_wire.sym} 160 -910 0 0 {name=p9 sig_type=std_logic lab=vdd}
+C {devices/lab_wire.sym} 450 -690 0 0 {name=p10 sig_type=std_logic lab=out3}
+C {devices/lab_wire.sym} 170 -730 0 0 {name=p11 sig_type=std_logic lab=inp
+}
+C {devices/lab_wire.sym} 170 -650 0 0 {name=p12 sig_type=std_logic lab=inn
+}
+C {devices/vsource.sym} 340 -840 0 0 {name=Vx3 value=0 savecurrent=true}
