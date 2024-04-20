@@ -181,8 +181,8 @@ tclcommand="xschem raw_read $netlist_dir/tb_pls_tran_opamp.raw tran"
 }
 C {opamp.sym} 760 -690 0 0 {name=x2
 schematic=opamp_ext_C
-spice_sym_def="tcleval(.include $env(HOME)/design_workspace/sky130A/HelloWorld/magic/opamp_ext_C.spice)"
-tclcommand="textwindow $env(HOME)/design_workspace/sky130A/HelloWorld/magic/opamp_ext_C.spice"}
+spice_sym_def="tcleval(.include $env(HOME)/design_workspace/sky130A/HelloWorld/analog/layout/opamp_ext_C.spice)"
+tclcommand="textwindow $env(HOME)/design_workspace/sky130A/HelloWorld/analog/layout/opamp_ext_C.spice"}
 C {devices/isource.sym} 720 -840 0 0 {name=I1 value=50u}
 C {devices/gnd.sym} 760 -530 0 0 {name=l2 lab=GND}
 C {devices/lab_wire.sym} 620 -910 0 0 {name=p5 sig_type=std_logic lab=vdd}
@@ -195,8 +195,8 @@ C {devices/vsource.sym} 790 -400 0 0 {name=Vx1 value=0 savecurrent=true}
 C {devices/vsource.sym} 800 -840 0 0 {name=Vx2 value=0 savecurrent=true}
 C {opamp.sym} 300 -690 0 0 {name=x3
 schematic=opamp_ext_RC
-spice_sym_def="tcleval(.include $env(HOME)/design_workspace/sky130A/HelloWorld/magic/opamp_ext_RC.spice)"
-tclcommand="textwindow $env(HOME)/design_workspace/sky130A/HelloWorld/magic/opamp_ext_RC.spice"}
+spice_sym_def="tcleval(.include $env(HOME)/design_workspace/sky130A/HelloWorld/analog/layout/opamp_ext_RC.spice)"
+tclcommand="textwindow $env(HOME)/design_workspace/sky130A/HelloWorld/analog/layout/opamp_ext_RC.spice"}
 C {devices/isource.sym} 260 -840 0 0 {name=I2 value=50u}
 C {devices/gnd.sym} 300 -530 0 0 {name=l3 lab=GND}
 C {devices/lab_wire.sym} 160 -910 0 0 {name=p9 sig_type=std_logic lab=vdd}

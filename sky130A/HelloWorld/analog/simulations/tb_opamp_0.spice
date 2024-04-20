@@ -1,4 +1,4 @@
-** sch_path: /home/erwann/design_workspace/sky130A/HelloWorld/xschem/tb_opamp_0.sch
+** sch_path: /home/erwann/design_workspace/sky130A/HelloWorld/analog/schematic/tb_opamp_0.sch
 **.subckt tb_opamp_0
 x1 vdd out inp inn net1 GND opamp
 V1 vdd GND 1.8
@@ -23,8 +23,8 @@ plot i(v1)
 **.ends
 
 * expanding   symbol:  opamp.sym # of pins=6
-** sym_path: /home/erwann/design_workspace/sky130A/HelloWorld/xschem/opamp.sym
-** sch_path: /home/erwann/design_workspace/sky130A/HelloWorld/xschem/opamp.sch
+** sym_path: /home/erwann/design_workspace/sky130A/HelloWorld/analog/schematic/opamp.sym
+** sch_path: /home/erwann/design_workspace/sky130A/HelloWorld/analog/schematic/opamp.sch
 .subckt opamp vdd out inp inn ibiasn vss
 *.ipin inn
 *.ipin inp

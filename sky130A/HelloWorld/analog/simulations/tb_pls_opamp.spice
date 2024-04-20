@@ -1,4 +1,4 @@
-** sch_path: /home/erwann/design_workspace/sky130A/HelloWorld/xschem/tb_pls_opamp.sch
+** sch_path: /home/erwann/design_workspace/sky130A/HelloWorld/analog/schematic/tb_pls_opamp.sch
 **.subckt tb_pls_opamp
 x1 net3 out inp inn net1 GND opamp
 V1 vdd GND 1.8
@@ -28,8 +28,8 @@ write tb_pls_opamp.raw
 **.ends
 
 * expanding   symbol:  opamp.sym # of pins=6
-** sym_path: /home/erwann/design_workspace/sky130A/HelloWorld/xschem/opamp.sym
-** sch_path: /home/erwann/design_workspace/sky130A/HelloWorld/xschem/opamp.sch
+** sym_path: /home/erwann/design_workspace/sky130A/HelloWorld/analog/schematic/opamp.sym
+** sch_path: /home/erwann/design_workspace/sky130A/HelloWorld/analog/schematic/opamp.sch
 .subckt opamp vdd out inp inn ibiasn vss
 *.ipin inn
 *.ipin inp
@@ -59,7 +59,7 @@ XM8 ibiasn ibiasn vss vss sky130_fd_pr__nfet_01v8 L=1 W=40 nf=1 ad='int((nf+1)/2
 
 
 * expanding   symbol:  opamp_ext_C.sym # of pins=6
-** sym_path: /home/erwann/design_workspace/sky130A/HelloWorld/xschem/opamp.sym
-.include /home/erwann/design_workspace/sky130A/HelloWorld/magic/opamp_ext_C.spice
+** sym_path: /home/erwann/design_workspace/sky130A/HelloWorld/analog/schematic/opamp.sym
+.include /home/erwann/design_workspace/sky130A/HelloWorld/analog/layout/opamp_ext_C.spice
 .GLOBAL GND
 .end
