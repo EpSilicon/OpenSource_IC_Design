@@ -1,0 +1,369 @@
+DESIGN padring_sky130 ;
+UNITS DISTANCE MICRONS 100 ; 
+COMPONENTS 182 ;
+  - CORNER_1 sky130_ef_io__corner_pad
+    + PLACED ( 0 100000 ) E ;
+  - CORNER_2 sky130_ef_io__corner_pad
+    + PLACED ( 100000 99600 ) S ;
+  - CORNER_3 sky130_ef_io__corner_pad
+    + PLACED ( 0 0 ) N ;
+  - CORNER_4 sky130_ef_io__corner_pad
+    + PLACED ( 99600 0 ) W ;
+  - FILLER_5 sky130_ef_io__com_bus_slice_10um
+    + PLACED ( 20400 100203.5 )  S ;
+  - FILLER_6 sky130_ef_io__com_bus_slice_5um
+    + PLACED ( 21400 100203.5 )  S ;
+  - FILLER_7 sky130_ef_io__com_bus_slice_1um
+    + PLACED ( 21900 100203.5 )  S ;
+  - FILLER_8 sky130_ef_io__com_bus_slice_1um
+    + PLACED ( 22000 100203.5 )  S ;
+  - GPIO[0] sky130_ef_io__gpiov2_pad
+    + PLACED ( 22100 100203.5 )  S ;
+  - FILLER_10 sky130_ef_io__com_bus_slice_10um
+    + PLACED ( 30100 100203.5 )  S ;
+  - FILLER_11 sky130_ef_io__com_bus_slice_5um
+    + PLACED ( 31100 100203.5 )  S ;
+  - FILLER_12 sky130_ef_io__com_bus_slice_1um
+    + PLACED ( 31600 100203.5 )  S ;
+  - FILLER_13 sky130_ef_io__com_bus_slice_1um
+    + PLACED ( 31700 100203.5 )  S ;
+  - GPIO[1] sky130_ef_io__gpiov2_pad
+    + PLACED ( 31800 100203.5 )  S ;
+  - FILLER_15 sky130_ef_io__com_bus_slice_10um
+    + PLACED ( 39800 100203.5 )  S ;
+  - FILLER_16 sky130_ef_io__com_bus_slice_5um
+    + PLACED ( 40800 100203.5 )  S ;
+  - FILLER_17 sky130_ef_io__com_bus_slice_1um
+    + PLACED ( 41300 100203.5 )  S ;
+  - FILLER_18 sky130_ef_io__com_bus_slice_1um
+    + PLACED ( 41400 100203.5 )  S ;
+  - FILLER_19 sky130_ef_io__com_bus_slice_1um
+    + PLACED ( 41500 100203.5 )  S ;
+  - GPIO[2] sky130_ef_io__gpiov2_pad
+    + PLACED ( 41600 100203.5 )  S ;
+  - FILLER_21 sky130_ef_io__com_bus_slice_10um
+    + PLACED ( 49600 100203.5 )  S ;
+  - FILLER_22 sky130_ef_io__com_bus_slice_5um
+    + PLACED ( 50600 100203.5 )  S ;
+  - FILLER_23 sky130_ef_io__com_bus_slice_1um
+    + PLACED ( 51100 100203.5 )  S ;
+  - FILLER_24 sky130_ef_io__com_bus_slice_1um
+    + PLACED ( 51200 100203.5 )  S ;
+  - GPIO[3] sky130_ef_io__gpiov2_pad
+    + PLACED ( 51300 100203.5 )  S ;
+  - FILLER_26 sky130_ef_io__com_bus_slice_10um
+    + PLACED ( 59300 100203.5 )  S ;
+  - FILLER_27 sky130_ef_io__com_bus_slice_5um
+    + PLACED ( 60300 100203.5 )  S ;
+  - FILLER_28 sky130_ef_io__com_bus_slice_1um
+    + PLACED ( 60800 100203.5 )  S ;
+  - FILLER_29 sky130_ef_io__com_bus_slice_1um
+    + PLACED ( 60900 100203.5 )  S ;
+  - GPIO[4] sky130_ef_io__gpiov2_pad
+    + PLACED ( 61000 100203.5 )  S ;
+  - FILLER_31 sky130_ef_io__com_bus_slice_10um
+    + PLACED ( 69000 100203.5 )  S ;
+  - FILLER_32 sky130_ef_io__com_bus_slice_5um
+    + PLACED ( 70000 100203.5 )  S ;
+  - FILLER_33 sky130_ef_io__com_bus_slice_1um
+    + PLACED ( 70500 100203.5 )  S ;
+  - FILLER_34 sky130_ef_io__com_bus_slice_1um
+    + PLACED ( 70600 100203.5 )  S ;
+  - FILLER_35 sky130_ef_io__com_bus_slice_1um
+    + PLACED ( 70700 100203.5 )  S ;
+  - GPIO[5] sky130_ef_io__gpiov2_pad
+    + PLACED ( 70800 100203.5 )  S ;
+  - FILLER_37 sky130_ef_io__com_bus_slice_10um
+    + PLACED ( 78800 100203.5 )  S ;
+  - FILLER_38 sky130_ef_io__com_bus_slice_5um
+    + PLACED ( 79800 100203.5 )  S ;
+  - FILLER_39 sky130_ef_io__com_bus_slice_1um
+    + PLACED ( 80300 100203.5 )  S ;
+  - FILLER_40 sky130_ef_io__com_bus_slice_1um
+    + PLACED ( 80400 100203.5 )  S ;
+  - GPIO[6] sky130_ef_io__gpiov2_pad
+    + PLACED ( 80500 100203.5 )  S ;
+  - FILLER_42 sky130_ef_io__com_bus_slice_10um
+    + PLACED ( 88500 100203.5 )  S ;
+  - FILLER_43 sky130_ef_io__com_bus_slice_5um
+    + PLACED ( 89500 100203.5 )  S ;
+  - FILLER_44 sky130_ef_io__com_bus_slice_1um
+    + PLACED ( 90000 100203.5 )  S ;
+  - FILLER_45 sky130_ef_io__com_bus_slice_1um
+    + PLACED ( 90100 100203.5 )  S ;
+  - GPIO[7] sky130_ef_io__gpiov2_pad
+    + PLACED ( 90200 100203.5 )  S ;
+  - FILLER_47 sky130_ef_io__com_bus_slice_10um
+    + PLACED ( 98200 100203.5 )  S ;
+  - FILLER_48 sky130_ef_io__com_bus_slice_5um
+    + PLACED ( 99200 100203.5 )  S ;
+  - FILLER_49 sky130_ef_io__com_bus_slice_1um
+    + PLACED ( 99700 100203.5 )  S ;
+  - FILLER_50 sky130_ef_io__com_bus_slice_1um
+    + PLACED ( 99800 100203.5 )  S ;
+  - FILLER_51 sky130_ef_io__com_bus_slice_1um
+    + PLACED ( 99900 100203.5 )  S ;
+  - FILLER_52 sky130_ef_io__com_bus_slice_10um
+    + PLACED ( 20000 0 )  N ;
+  - FILLER_53 sky130_ef_io__com_bus_slice_5um
+    + PLACED ( 21000 0 )  N ;
+  - FILLER_54 sky130_ef_io__com_bus_slice_1um
+    + PLACED ( 21500 0 )  N ;
+  - FILLER_55 sky130_ef_io__com_bus_slice_1um
+    + PLACED ( 21600 0 )  N ;
+  - CLK sky130_ef_io__gpiov2_pad
+    + PLACED ( 21700 0 )  N ;
+  - FILLER_57 sky130_ef_io__com_bus_slice_10um
+    + PLACED ( 29700 0 )  N ;
+  - FILLER_58 sky130_ef_io__com_bus_slice_5um
+    + PLACED ( 30700 0 )  N ;
+  - FILLER_59 sky130_ef_io__com_bus_slice_1um
+    + PLACED ( 31200 0 )  N ;
+  - FILLER_60 sky130_ef_io__com_bus_slice_1um
+    + PLACED ( 31300 0 )  N ;
+  - RESET sky130_ef_io__gpiov2_pad
+    + PLACED ( 31400 0 )  N ;
+  - FILLER_62 sky130_ef_io__com_bus_slice_10um
+    + PLACED ( 39400 0 )  N ;
+  - FILLER_63 sky130_ef_io__com_bus_slice_5um
+    + PLACED ( 40400 0 )  N ;
+  - FILLER_64 sky130_ef_io__com_bus_slice_1um
+    + PLACED ( 40900 0 )  N ;
+  - FILLER_65 sky130_ef_io__com_bus_slice_1um
+    + PLACED ( 41000 0 )  N ;
+  - FILLER_66 sky130_ef_io__com_bus_slice_1um
+    + PLACED ( 41100 0 )  N ;
+  - MISO sky130_ef_io__gpiov2_pad
+    + PLACED ( 41200 0 )  N ;
+  - FILLER_68 sky130_ef_io__com_bus_slice_10um
+    + PLACED ( 49200 0 )  N ;
+  - FILLER_69 sky130_ef_io__com_bus_slice_5um
+    + PLACED ( 50200 0 )  N ;
+  - FILLER_70 sky130_ef_io__com_bus_slice_1um
+    + PLACED ( 50700 0 )  N ;
+  - FILLER_71 sky130_ef_io__com_bus_slice_1um
+    + PLACED ( 50800 0 )  N ;
+  - MOSI sky130_ef_io__gpiov2_pad
+    + PLACED ( 50900 0 )  N ;
+  - FILLER_73 sky130_ef_io__com_bus_slice_10um
+    + PLACED ( 58900 0 )  N ;
+  - FILLER_74 sky130_ef_io__com_bus_slice_5um
+    + PLACED ( 59900 0 )  N ;
+  - FILLER_75 sky130_ef_io__com_bus_slice_1um
+    + PLACED ( 60400 0 )  N ;
+  - FILLER_76 sky130_ef_io__com_bus_slice_1um
+    + PLACED ( 60500 0 )  N ;
+  - SCK sky130_ef_io__gpiov2_pad
+    + PLACED ( 60600 0 )  N ;
+  - FILLER_78 sky130_ef_io__com_bus_slice_10um
+    + PLACED ( 68600 0 )  N ;
+  - FILLER_79 sky130_ef_io__com_bus_slice_5um
+    + PLACED ( 69600 0 )  N ;
+  - FILLER_80 sky130_ef_io__com_bus_slice_1um
+    + PLACED ( 70100 0 )  N ;
+  - FILLER_81 sky130_ef_io__com_bus_slice_1um
+    + PLACED ( 70200 0 )  N ;
+  - FILLER_82 sky130_ef_io__com_bus_slice_1um
+    + PLACED ( 70300 0 )  N ;
+  - SPI_CS_N sky130_ef_io__gpiov2_pad
+    + PLACED ( 70400 0 )  N ;
+  - FILLER_84 sky130_ef_io__com_bus_slice_10um
+    + PLACED ( 78400 0 )  N ;
+  - FILLER_85 sky130_ef_io__com_bus_slice_5um
+    + PLACED ( 79400 0 )  N ;
+  - FILLER_86 sky130_ef_io__com_bus_slice_1um
+    + PLACED ( 79900 0 )  N ;
+  - FILLER_87 sky130_ef_io__com_bus_slice_1um
+    + PLACED ( 80000 0 )  N ;
+  - UART_TX sky130_ef_io__gpiov2_pad
+    + PLACED ( 80100 0 )  N ;
+  - FILLER_89 sky130_ef_io__com_bus_slice_10um
+    + PLACED ( 88100 0 )  N ;
+  - FILLER_90 sky130_ef_io__com_bus_slice_5um
+    + PLACED ( 89100 0 )  N ;
+  - FILLER_91 sky130_ef_io__com_bus_slice_1um
+    + PLACED ( 89600 0 )  N ;
+  - FILLER_92 sky130_ef_io__com_bus_slice_1um
+    + PLACED ( 89700 0 )  N ;
+  - UART_RX sky130_ef_io__gpiov2_pad
+    + PLACED ( 89800 0 )  N ;
+  - FILLER_94 sky130_ef_io__com_bus_slice_10um
+    + PLACED ( 97800 0 )  N ;
+  - FILLER_95 sky130_ef_io__com_bus_slice_5um
+    + PLACED ( 98800 0 )  N ;
+  - FILLER_96 sky130_ef_io__com_bus_slice_1um
+    + PLACED ( 99300 0 )  N ;
+  - FILLER_97 sky130_ef_io__com_bus_slice_1um
+    + PLACED ( 99400 0 )  N ;
+  - FILLER_98 sky130_ef_io__com_bus_slice_1um
+    + PLACED ( 99500 0 )  N ;
+  - FILLER_99 sky130_ef_io__com_bus_slice_20um
+    + PLACED ( 0 20400 )  E ;
+  - FILLER_100 sky130_ef_io__com_bus_slice_20um
+    + PLACED ( 0 22400 )  E ;
+  - FILLER_101 sky130_ef_io__com_bus_slice_10um
+    + PLACED ( 0 24400 )  E ;
+  - FILLER_102 sky130_ef_io__com_bus_slice_1um
+    + PLACED ( 0 25400 )  E ;
+  - FILLER_103 sky130_ef_io__com_bus_slice_1um
+    + PLACED ( 0 25500 )  E ;
+  - FILLER_104 sky130_ef_io__com_bus_slice_1um
+    + PLACED ( 0 25600 )  E ;
+  - FILLER_105 sky130_ef_io__com_bus_slice_1um
+    + PLACED ( 0 25700 )  E ;
+  - DAC_0 sky130_ef_io__gpiov2_pad
+    + PLACED ( 0 25800 )  E ;
+  - FILLER_107 sky130_ef_io__com_bus_slice_20um
+    + PLACED ( 0 33800 )  E ;
+  - FILLER_108 sky130_ef_io__com_bus_slice_20um
+    + PLACED ( 0 35800 )  E ;
+  - FILLER_109 sky130_ef_io__com_bus_slice_10um
+    + PLACED ( 0 37800 )  E ;
+  - FILLER_110 sky130_ef_io__com_bus_slice_1um
+    + PLACED ( 0 38800 )  E ;
+  - FILLER_111 sky130_ef_io__com_bus_slice_1um
+    + PLACED ( 0 38900 )  E ;
+  - FILLER_112 sky130_ef_io__com_bus_slice_1um
+    + PLACED ( 0 39000 )  E ;
+  - FILLER_113 sky130_ef_io__com_bus_slice_1um
+    + PLACED ( 0 39100 )  E ;
+  - DAC_1 sky130_ef_io__gpiov2_pad
+    + PLACED ( 0 39200 )  E ;
+  - FILLER_115 sky130_ef_io__com_bus_slice_20um
+    + PLACED ( 0 47200 )  E ;
+  - FILLER_116 sky130_ef_io__com_bus_slice_20um
+    + PLACED ( 0 49200 )  E ;
+  - FILLER_117 sky130_ef_io__com_bus_slice_10um
+    + PLACED ( 0 51200 )  E ;
+  - FILLER_118 sky130_ef_io__com_bus_slice_5um
+    + PLACED ( 0 52200 )  E ;
+  - VDD_2 sky130_ef_io__vdda_hvc_pad
+    + PLACED ( 0 52700 )  E ;
+  - GND_2 sky130_ef_io__vssa_hvc_pad
+    + PLACED ( 0 60200 )  E ;
+  - FILLER_121 sky130_ef_io__com_bus_slice_20um
+    + PLACED ( 0 67700 )  E ;
+  - FILLER_122 sky130_ef_io__com_bus_slice_20um
+    + PLACED ( 0 69700 )  E ;
+  - FILLER_123 sky130_ef_io__com_bus_slice_10um
+    + PLACED ( 0 71700 )  E ;
+  - FILLER_124 sky130_ef_io__com_bus_slice_1um
+    + PLACED ( 0 72700 )  E ;
+  - FILLER_125 sky130_ef_io__com_bus_slice_1um
+    + PLACED ( 0 72800 )  E ;
+  - FILLER_126 sky130_ef_io__com_bus_slice_1um
+    + PLACED ( 0 72900 )  E ;
+  - FILLER_127 sky130_ef_io__com_bus_slice_1um
+    + PLACED ( 0 73000 )  E ;
+  - DAC_2 sky130_ef_io__gpiov2_pad
+    + PLACED ( 0 73100 )  E ;
+  - FILLER_129 sky130_ef_io__com_bus_slice_20um
+    + PLACED ( 0 81100 )  E ;
+  - FILLER_130 sky130_ef_io__com_bus_slice_20um
+    + PLACED ( 0 83100 )  E ;
+  - FILLER_131 sky130_ef_io__com_bus_slice_10um
+    + PLACED ( 0 85100 )  E ;
+  - FILLER_132 sky130_ef_io__com_bus_slice_1um
+    + PLACED ( 0 86100 )  E ;
+  - FILLER_133 sky130_ef_io__com_bus_slice_1um
+    + PLACED ( 0 86200 )  E ;
+  - FILLER_134 sky130_ef_io__com_bus_slice_1um
+    + PLACED ( 0 86300 )  E ;
+  - FILLER_135 sky130_ef_io__com_bus_slice_1um
+    + PLACED ( 0 86400 )  E ;
+  - DAC_3 sky130_ef_io__gpiov2_pad
+    + PLACED ( 0 86500 )  E ;
+  - FILLER_137 sky130_ef_io__com_bus_slice_20um
+    + PLACED ( 0 94500 )  E ;
+  - FILLER_138 sky130_ef_io__com_bus_slice_20um
+    + PLACED ( 0 96500 )  E ;
+  - FILLER_139 sky130_ef_io__com_bus_slice_10um
+    + PLACED ( 0 98500 )  E ;
+  - FILLER_140 sky130_ef_io__com_bus_slice_5um
+    + PLACED ( 0 99500 )  E ;
+  - FILLER_141 sky130_ef_io__com_bus_slice_20um
+    + PLACED ( 100203.5 20000 )  W ;
+  - FILLER_142 sky130_ef_io__com_bus_slice_20um
+    + PLACED ( 100203.5 22000 )  W ;
+  - FILLER_143 sky130_ef_io__com_bus_slice_10um
+    + PLACED ( 100203.5 24000 )  W ;
+  - FILLER_144 sky130_ef_io__com_bus_slice_1um
+    + PLACED ( 100203.5 25000 )  W ;
+  - FILLER_145 sky130_ef_io__com_bus_slice_1um
+    + PLACED ( 100203.5 25100 )  W ;
+  - FILLER_146 sky130_ef_io__com_bus_slice_1um
+    + PLACED ( 100203.5 25200 )  W ;
+  - FILLER_147 sky130_ef_io__com_bus_slice_1um
+    + PLACED ( 100203.5 25300 )  W ;
+  - PWM_1 sky130_ef_io__gpiov2_pad
+    + PLACED ( 100203.5 25400 )  W ;
+  - FILLER_149 sky130_ef_io__com_bus_slice_20um
+    + PLACED ( 100203.5 33400 )  W ;
+  - FILLER_150 sky130_ef_io__com_bus_slice_20um
+    + PLACED ( 100203.5 35400 )  W ;
+  - FILLER_151 sky130_ef_io__com_bus_slice_10um
+    + PLACED ( 100203.5 37400 )  W ;
+  - FILLER_152 sky130_ef_io__com_bus_slice_1um
+    + PLACED ( 100203.5 38400 )  W ;
+  - FILLER_153 sky130_ef_io__com_bus_slice_1um
+    + PLACED ( 100203.5 38500 )  W ;
+  - FILLER_154 sky130_ef_io__com_bus_slice_1um
+    + PLACED ( 100203.5 38600 )  W ;
+  - FILLER_155 sky130_ef_io__com_bus_slice_1um
+    + PLACED ( 100203.5 38700 )  W ;
+  - PWM_2 sky130_ef_io__gpiov2_pad
+    + PLACED ( 100203.5 38800 )  W ;
+  - FILLER_157 sky130_ef_io__com_bus_slice_20um
+    + PLACED ( 100203.5 46800 )  W ;
+  - FILLER_158 sky130_ef_io__com_bus_slice_20um
+    + PLACED ( 100203.5 48800 )  W ;
+  - FILLER_159 sky130_ef_io__com_bus_slice_10um
+    + PLACED ( 100203.5 50800 )  W ;
+  - FILLER_160 sky130_ef_io__com_bus_slice_5um
+    + PLACED ( 100203.5 51800 )  W ;
+  - VDD_1 sky130_ef_io__vdda_hvc_pad
+    + PLACED ( 100203.5 52300 )  W ;
+  - GND_1 sky130_ef_io__vssa_hvc_pad
+    + PLACED ( 100203.5 59800 )  W ;
+  - FILLER_163 sky130_ef_io__com_bus_slice_20um
+    + PLACED ( 100203.5 67300 )  W ;
+  - FILLER_164 sky130_ef_io__com_bus_slice_20um
+    + PLACED ( 100203.5 69300 )  W ;
+  - FILLER_165 sky130_ef_io__com_bus_slice_10um
+    + PLACED ( 100203.5 71300 )  W ;
+  - FILLER_166 sky130_ef_io__com_bus_slice_1um
+    + PLACED ( 100203.5 72300 )  W ;
+  - FILLER_167 sky130_ef_io__com_bus_slice_1um
+    + PLACED ( 100203.5 72400 )  W ;
+  - FILLER_168 sky130_ef_io__com_bus_slice_1um
+    + PLACED ( 100203.5 72500 )  W ;
+  - FILLER_169 sky130_ef_io__com_bus_slice_1um
+    + PLACED ( 100203.5 72600 )  W ;
+  - PWM_3 sky130_ef_io__gpiov2_pad
+    + PLACED ( 100203.5 72700 )  W ;
+  - FILLER_171 sky130_ef_io__com_bus_slice_20um
+    + PLACED ( 100203.5 80700 )  W ;
+  - FILLER_172 sky130_ef_io__com_bus_slice_20um
+    + PLACED ( 100203.5 82700 )  W ;
+  - FILLER_173 sky130_ef_io__com_bus_slice_10um
+    + PLACED ( 100203.5 84700 )  W ;
+  - FILLER_174 sky130_ef_io__com_bus_slice_1um
+    + PLACED ( 100203.5 85700 )  W ;
+  - FILLER_175 sky130_ef_io__com_bus_slice_1um
+    + PLACED ( 100203.5 85800 )  W ;
+  - FILLER_176 sky130_ef_io__com_bus_slice_1um
+    + PLACED ( 100203.5 85900 )  W ;
+  - FILLER_177 sky130_ef_io__com_bus_slice_1um
+    + PLACED ( 100203.5 86000 )  W ;
+  - PWM_4 sky130_ef_io__gpiov2_pad
+    + PLACED ( 100203.5 86100 )  W ;
+  - FILLER_179 sky130_ef_io__com_bus_slice_20um
+    + PLACED ( 100203.5 94100 )  W ;
+  - FILLER_180 sky130_ef_io__com_bus_slice_20um
+    + PLACED ( 100203.5 96100 )  W ;
+  - FILLER_181 sky130_ef_io__com_bus_slice_10um
+    + PLACED ( 100203.5 98100 )  W ;
+  - FILLER_182 sky130_ef_io__com_bus_slice_5um
+    + PLACED ( 100203.5 99100 )  W ;
+END COMPONENTS
+END DESIGN
