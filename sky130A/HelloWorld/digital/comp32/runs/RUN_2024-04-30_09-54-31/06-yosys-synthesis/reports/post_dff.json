@@ -1,0 +1,45 @@
+{
+   "creator": "Yosys 0.38 (git sha1 543faed9c8c, clang++ 16.0.6 -fPIC -Os)",
+   "invocation": "stat -json -liberty /home/erwann/design_workspace/sky130A/HelloWorld/digital/comp32/runs/RUN_2024-04-30_09-54-31/tmp/5baca64e705d42f4beb6943c6e9ca600.lib ",
+   "modules": {
+      "\\comp32": {
+         "num_wires":         155,
+         "num_wire_bits":     217,
+         "num_pub_wires":     4,
+         "num_pub_wire_bits": 66,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         152,
+         "area":              21.270400,
+         "num_cells_by_type": {
+            "$_ANDNOT_": 77,
+            "$_ORNOT_": 32,
+            "$_OR_": 11,
+            "$_XNOR_": 9,
+            "$_XOR_": 22,
+            "sky130_fd_sc_hd__dfxtp_2": 1
+         }
+      }
+   },
+      "design": {
+         "num_wires":         155,
+         "num_wire_bits":     217,
+         "num_pub_wires":     4,
+         "num_pub_wire_bits": 66,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         152,
+         "area":              21.270400,
+         "num_cells_by_type": {
+            "$_ANDNOT_": 77,
+            "$_ORNOT_": 32,
+            "$_OR_": 11,
+            "$_XNOR_": 9,
+            "$_XOR_": 22,
+            "sky130_fd_sc_hd__dfxtp_2": 1
+         }
+      }
+}
+

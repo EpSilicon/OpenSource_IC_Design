@@ -1,0 +1,11 @@
+puts "Reading SPICE netlist file '/home/erwann/.volare/volare/sky130/versions/bdc9412b3e468c102d01b7cf6337be06ec6e9c9a/sky130A/libs.ref/sky130_fd_sc_hd/spice/sky130_ef_sc_hd__decap_12.spice'..."
+readnet spice /home/erwann/.volare/volare/sky130/versions/bdc9412b3e468c102d01b7cf6337be06ec6e9c9a/sky130A/libs.ref/sky130_fd_sc_hd/spice/sky130_ef_sc_hd__decap_12.spice 1
+puts "Reading SPICE netlist file '/home/erwann/.volare/volare/sky130/versions/bdc9412b3e468c102d01b7cf6337be06ec6e9c9a/sky130A/libs.ref/sky130_fd_sc_hd/spice/sky130_ef_sc_hd__fill_12.spice'..."
+readnet spice /home/erwann/.volare/volare/sky130/versions/bdc9412b3e468c102d01b7cf6337be06ec6e9c9a/sky130A/libs.ref/sky130_fd_sc_hd/spice/sky130_ef_sc_hd__fill_12.spice 1
+puts "Reading SPICE netlist file '/home/erwann/.volare/volare/sky130/versions/bdc9412b3e468c102d01b7cf6337be06ec6e9c9a/sky130A/libs.ref/sky130_fd_sc_hd/spice/sky130_ef_sc_hd__fill_4.spice'..."
+readnet spice /home/erwann/.volare/volare/sky130/versions/bdc9412b3e468c102d01b7cf6337be06ec6e9c9a/sky130A/libs.ref/sky130_fd_sc_hd/spice/sky130_ef_sc_hd__fill_4.spice 1
+puts "Reading SPICE netlist file '/home/erwann/.volare/volare/sky130/versions/bdc9412b3e468c102d01b7cf6337be06ec6e9c9a/sky130A/libs.ref/sky130_fd_sc_hd/spice/sky130_ef_sc_hd__fill_8.spice'..."
+readnet spice /home/erwann/.volare/volare/sky130/versions/bdc9412b3e468c102d01b7cf6337be06ec6e9c9a/sky130A/libs.ref/sky130_fd_sc_hd/spice/sky130_ef_sc_hd__fill_8.spice 1
+puts "Reading SPICE netlist file '/home/erwann/.volare/volare/sky130/versions/bdc9412b3e468c102d01b7cf6337be06ec6e9c9a/sky130A/libs.ref/sky130_fd_sc_hd/spice/sky130_fd_sc_hd.spice'..."
+readnet spice /home/erwann/.volare/volare/sky130/versions/bdc9412b3e468c102d01b7cf6337be06ec6e9c9a/sky130A/libs.ref/sky130_fd_sc_hd/spice/sky130_fd_sc_hd.spice 1
+lvs { /home/erwann/design_workspace/sky130A/HelloWorld/digital/comp32/runs/RUN_2024-04-29_20-15-20/63-magic-spiceextraction/comp32.spice comp32 } { /home/erwann/design_workspace/sky130A/HelloWorld/digital/comp32/runs/RUN_2024-04-29_20-15-20/49-openroad-fillinsertion/comp32.pnl.v comp32 } /nix/store/6kwxhhp4vfqxi9qpnqnwc7xg02y8ymv6-python3-3.11.6-env/lib/python3.11/site-packages/openlane/scripts/netgen/setup.tcl /home/erwann/design_workspace/sky130A/HelloWorld/digital/comp32/runs/RUN_2024-04-29_20-15-20/65-netgen-lvs/reports/lvs.netgen.rpt -json

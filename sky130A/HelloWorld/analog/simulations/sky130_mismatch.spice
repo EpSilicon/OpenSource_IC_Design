@@ -1,0 +1,62 @@
+** sch_path: /home/erwann/.volare//sky130A/libs.tech/xschem/sky130_tests/sky130_mismatch.sch
+**.subckt sky130_mismatch
+XM18 VTH1 VTH1 VSS VSS sky130_fd_pr__nfet_01v8 L=0.15 W=0.5 nf=1 ad='W * 0.29' as='W * 0.29' pd='2*(W + 0.29)' ps='2*(W + 0.29)' nrd=0
++ nrs=0 sa=0 sb=0 sd=0 mult=10 m=10
+I0 net1 VTH1 100n
+XM1[9] VTH2 VTH2 VSS VSS sky130_fd_pr__nfet_01v8 L=0.15 W=0.5 nf=1 ad='W * 0.29' as='W * 0.29' pd='2*(W + 0.29)' ps='2*(W + 0.29)'
++ nrd=0 nrs=0 sa=0 sb=0 sd=0 mult=1 m=1
+XM1[8] VTH2 VTH2 VSS VSS sky130_fd_pr__nfet_01v8 L=0.15 W=0.5 nf=1 ad='W * 0.29' as='W * 0.29' pd='2*(W + 0.29)' ps='2*(W + 0.29)'
++ nrd=0 nrs=0 sa=0 sb=0 sd=0 mult=1 m=1
+XM1[7] VTH2 VTH2 VSS VSS sky130_fd_pr__nfet_01v8 L=0.15 W=0.5 nf=1 ad='W * 0.29' as='W * 0.29' pd='2*(W + 0.29)' ps='2*(W + 0.29)'
++ nrd=0 nrs=0 sa=0 sb=0 sd=0 mult=1 m=1
+XM1[6] VTH2 VTH2 VSS VSS sky130_fd_pr__nfet_01v8 L=0.15 W=0.5 nf=1 ad='W * 0.29' as='W * 0.29' pd='2*(W + 0.29)' ps='2*(W + 0.29)'
++ nrd=0 nrs=0 sa=0 sb=0 sd=0 mult=1 m=1
+XM1[5] VTH2 VTH2 VSS VSS sky130_fd_pr__nfet_01v8 L=0.15 W=0.5 nf=1 ad='W * 0.29' as='W * 0.29' pd='2*(W + 0.29)' ps='2*(W + 0.29)'
++ nrd=0 nrs=0 sa=0 sb=0 sd=0 mult=1 m=1
+XM1[4] VTH2 VTH2 VSS VSS sky130_fd_pr__nfet_01v8 L=0.15 W=0.5 nf=1 ad='W * 0.29' as='W * 0.29' pd='2*(W + 0.29)' ps='2*(W + 0.29)'
++ nrd=0 nrs=0 sa=0 sb=0 sd=0 mult=1 m=1
+XM1[3] VTH2 VTH2 VSS VSS sky130_fd_pr__nfet_01v8 L=0.15 W=0.5 nf=1 ad='W * 0.29' as='W * 0.29' pd='2*(W + 0.29)' ps='2*(W + 0.29)'
++ nrd=0 nrs=0 sa=0 sb=0 sd=0 mult=1 m=1
+XM1[2] VTH2 VTH2 VSS VSS sky130_fd_pr__nfet_01v8 L=0.15 W=0.5 nf=1 ad='W * 0.29' as='W * 0.29' pd='2*(W + 0.29)' ps='2*(W + 0.29)'
++ nrd=0 nrs=0 sa=0 sb=0 sd=0 mult=1 m=1
+XM1[1] VTH2 VTH2 VSS VSS sky130_fd_pr__nfet_01v8 L=0.15 W=0.5 nf=1 ad='W * 0.29' as='W * 0.29' pd='2*(W + 0.29)' ps='2*(W + 0.29)'
++ nrd=0 nrs=0 sa=0 sb=0 sd=0 mult=1 m=1
+XM1[0] VTH2 VTH2 VSS VSS sky130_fd_pr__nfet_01v8 L=0.15 W=0.5 nf=1 ad='W * 0.29' as='W * 0.29' pd='2*(W + 0.29)' ps='2*(W + 0.29)'
++ nrd=0 nrs=0 sa=0 sb=0 sd=0 mult=1 m=1
+V1 VSS net1 0
+.save i(v1)
+I1 VSS VTH2 100n
+**** begin user architecture code
+.lib /home/erwann/.volare//sky130A/libs.tech/ngspice/sky130.lib.spice mc
+**** end user architecture code
+**.ends
+**** begin user architecture code
+
+* .option SCALE=1e-6
+.option savecurrents
+
+* this experimental option enables mos model bin
+* selection based on W/NF instead of W
+.option wnflag=1
+
+
+
+.control
+  setseed 12
+  reset
+  let run=0
+  dowhile run < 1000
+    save all
+    op
+    print run
+    remzerovec
+    write sky130_mismatch.raw
+    set appendwrite
+    let run = run + 1
+    reset
+  end
+.endc
+
+
+**** end user architecture code
+.end

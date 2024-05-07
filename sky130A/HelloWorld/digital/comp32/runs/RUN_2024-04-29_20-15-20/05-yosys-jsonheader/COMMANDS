@@ -1,0 +1,1 @@
+yosys -c /nix/store/6kwxhhp4vfqxi9qpnqnwc7xg02y8ymv6-python3-3.11.6-env/lib/python3.11/site-packages/openlane/scripts/yosys/json_header.tcl

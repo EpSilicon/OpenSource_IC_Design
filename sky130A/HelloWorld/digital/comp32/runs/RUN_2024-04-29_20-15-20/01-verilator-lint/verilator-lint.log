@@ -1,0 +1,6 @@
+%Warning-BLKSEQ: /home/erwann/design_workspace/sky130A/HelloWorld/digital/comp32/src/comp32.v:22:9: Blocking assignment '=' in sequential logic process
+                                                                                                  : ... Suggest using delayed assignment '<='
+   22 |       z = 1'b1;
+      |         ^
+                 ... For warning description see https://verilator.org/warn/BLKSEQ?v=5.018
+                 ... Use "/* verilator lint_off BLKSEQ */" and lint_on around source to disable this message.
