@@ -1,0 +1,10 @@
+{
+	"design_powergrid__voltage__worst__net:vdd__corner:nom_tt_025C_1v80": 1.79998,
+	"design_powergrid__drop__average__net:vdd__corner:nom_tt_025C_1v80": 1.79999,
+	"design_powergrid__drop__worst__net:vdd__corner:nom_tt_025C_1v80": 1.60594e-05,
+	"design_powergrid__voltage__worst__net:vss__corner:nom_tt_025C_1v80": 1.81912e-05,
+	"design_powergrid__drop__average__net:vss__corner:nom_tt_025C_1v80": 4.92513e-06,
+	"design_powergrid__drop__worst__net:vss__corner:nom_tt_025C_1v80": 1.81912e-05,
+	"flow__warnings__count": 0,
+	"flow__errors__count": 0
+}

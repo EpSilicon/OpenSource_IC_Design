@@ -1,0 +1,63 @@
+Net: clk
+  Pin: _228_/CLK (sky130_fd_sc_hd__dfxtp_1)
+    Layer: met3
+      Partial area ratio:   73.55
+      Required ratio:    0.00 (Gate area) 
+      Partial area ratio:  404.33
+      Required ratio:  400.00 (Side area) (VIOLATED)
+      Cumulative area ratio:   84.13
+      Required ratio:    0.00 (Cumulative area) 
+      Cumulative area ratio:  441.53
+      Required ratio:    0.00 (Cumulative side area) 
+
+    Layer: met2
+      Partial area ratio:    0.00
+      Required ratio:    0.00 (Gate area) 
+      Partial area ratio:    0.00
+      Required ratio:  400.00 (Side area) 
+      Cumulative area ratio:   10.59
+      Required ratio:    0.00 (Cumulative area) 
+      Cumulative area ratio:   37.20
+      Required ratio:    0.00 (Cumulative side area) 
+
+    Layer: met1
+      Partial area ratio:    6.20
+      Required ratio:    0.00 (Gate area) 
+      Partial area ratio:   31.61
+      Required ratio:  400.00 (Side area) 
+      Cumulative area ratio:   10.59
+      Required ratio:    0.00 (Cumulative area) 
+      Cumulative area ratio:   37.20
+      Required ratio:    0.00 (Cumulative side area) 
+
+    Layer: li1
+      Partial area ratio:    4.39
+      Required ratio:    0.00 (Gate area) 
+      Partial area ratio:    5.59
+      Required ratio:   75.00 (Side area) 
+      Cumulative area ratio:    4.39
+      Required ratio:    0.00 (Cumulative area) 
+      Cumulative area ratio:    5.59
+      Required ratio:    0.00 (Cumulative side area) 
+
+    Via: M2M3_PR
+      Partial area ratio:    0.25
+      Required ratio:    6.00 (Gate area) 
+      Cumulative area ratio:    0.57
+      Required ratio:    0.00 (Cumulative area) 
+
+    Via: M1M2_PR
+      Partial area ratio:    0.14
+      Required ratio:    6.00 (Gate area) 
+      Cumulative area ratio:    0.32
+      Required ratio:    0.00 (Cumulative area) 
+
+    Via: L1M1_PR
+      Partial area ratio:    0.18
+      Required ratio:    3.00 (Gate area) 
+      Cumulative area ratio:    0.18
+      Required ratio:    0.00 (Cumulative area) 
+
+
+[INFO ANT-0002] Found 1 net violations.
+[INFO ANT-0001] Found 1 pin violations.

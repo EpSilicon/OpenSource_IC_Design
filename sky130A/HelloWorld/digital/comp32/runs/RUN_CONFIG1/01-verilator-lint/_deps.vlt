@@ -1,0 +1,5 @@
+`verilator_config
+lint_off -rule DECLFILENAME
+lint_off -rule EOFNEWLINE
+lint_off -rule UNDRIVEN -file "/home/erwann/design_workspace/sky130A/HelloWorld/digital/comp32/runs/RUN_2024-05-09_16-56-29/tmp/bd62a814c48d41e3bbd0a660f5c9d757.bb.v"
+lint_off -rule UNUSEDSIGNAL -file "/home/erwann/design_workspace/sky130A/HelloWorld/digital/comp32/runs/RUN_2024-05-09_16-56-29/tmp/bd62a814c48d41e3bbd0a660f5c9d757.bb.v"

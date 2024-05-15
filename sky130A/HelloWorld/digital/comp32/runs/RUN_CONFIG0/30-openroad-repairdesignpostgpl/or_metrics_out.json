@@ -1,0 +1,22 @@
+{
+	"timing__drv__floating__nets": 0,
+	"timing__drv__floating__pins": 0,
+	"design__instance__displacement__total": 673.129,
+	"design__instance__displacement__mean": 2.816,
+	"design__instance__displacement__max": 23,
+	"route__wirelength__estimated": 2533.69,
+	"design__violations": 0,
+	"design__io": 68,
+	"design__die__area": 3586.29,
+	"design__core__area": 1901.82,
+	"design__instance__count": 207,
+	"design__instance__area": 1074.78,
+	"design__instance__count__stdcell": 207,
+	"design__instance__area__stdcell": 1074.78,
+	"design__instance__count__macros": 0,
+	"design__instance__area__macros": 0,
+	"design__instance__utilization": 0.565132,
+	"design__instance__utilization__stdcell": 0.565132,
+	"flow__warnings__count": 33696,
+	"flow__errors__count": 0
+}

@@ -1,0 +1,8 @@
+<testsuites name="results">
+  <testsuite name="all" package="all">
+    <property name="random_seed" value="1715347340" />
+    <testcase name="comp32_random" classname="test_comp32" file="/home/erwann/design_workspace/sky130A/HelloWorld/digital/comp32/verification/test_comp32.py" lineno="10" time="0.05097532272338867" sim_time_ns="56.001" ratio_time="1098.590396452859">
+      <failure message="Test failed with RANDOM_SEED=1715347340" />
+    </testcase>
+  </testsuite>
+</testsuites>

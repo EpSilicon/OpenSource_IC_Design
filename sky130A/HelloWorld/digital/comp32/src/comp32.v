@@ -1,27 +1,25 @@
 /*
- * A simple 32-bit comparator
+ * 32-bit comparator: z=1 if a>b else 0
  *   
  */
 
 module comp32(
-    //`ifdef USE_POWER_PINS
-    //    inout vdd,	// 1.8V supply
-    //    inout vss,	// Digital ground
-    //`endif
     a, b, clk, z);
 
   input [31:0] a, b;  //define inputs and outputs
   input clk;
   output z;
 
-  reg z;
+  reg comp_out;
+  
+  assign z = comp_out;
 
   always @ (posedge clk)
   begin
      if (a > b)
-     	z = 1'b1;
+     	comp_out <= 1'b1;
      else 
-     	z = 1'b0;
+     	comp_out <= 1'b0;
   end
 endmodule
 

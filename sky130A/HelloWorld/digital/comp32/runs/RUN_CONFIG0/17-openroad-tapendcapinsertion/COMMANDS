@@ -1,0 +1,1 @@
+openroad -exit -no_splash -metrics /home/erwann/design_workspace/sky130A/HelloWorld/digital/comp32/runs/RUN_2024-05-09_16-54-40/17-openroad-tapendcapinsertion/or_metrics_out.json /nix/store/hwxq78ix5dm1zxacgmyfrlkgn2vq15hz-python3-3.11.6-env/lib/python3.11/site-packages/openlane/scripts/openroad/tapcell.tcl

@@ -1,0 +1,43 @@
+{
+   "creator": "Yosys 0.38 (git sha1 543faed9c8c, clang++ 16.0.6 -fPIC -Os)",
+   "invocation": "stat -json -liberty /home/erwann/design_workspace/sky130A/HelloWorld/digital/comp32/runs/RUN_2024-05-09_16-58-12/tmp/934e81de7b4e41a3b708db070dcfbf22.lib ",
+   "modules": {
+      "\\comp32": {
+         "num_wires":         155,
+         "num_wire_bits":     217,
+         "num_pub_wires":     4,
+         "num_pub_wire_bits": 66,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         152,
+         "num_cells_by_type": {
+            "$_ANDNOT_": 77,
+            "$_DFF_P_": 1,
+            "$_ORNOT_": 32,
+            "$_OR_": 11,
+            "$_XNOR_": 9,
+            "$_XOR_": 22
+         }
+      }
+   },
+      "design": {
+         "num_wires":         155,
+         "num_wire_bits":     217,
+         "num_pub_wires":     4,
+         "num_pub_wire_bits": 66,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         152,
+         "num_cells_by_type": {
+            "$_ANDNOT_": 77,
+            "$_DFF_P_": 1,
+            "$_ORNOT_": 32,
+            "$_OR_": 11,
+            "$_XNOR_": 9,
+            "$_XOR_": 22
+         }
+      }
+}
+

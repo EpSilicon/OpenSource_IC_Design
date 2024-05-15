@@ -1,35 +1,67 @@
-default: simulate
+## Iverilog Simulation Makefile
+DESIGN = comp32
 
-RTL = \
-	../src/comp32.v
+RTL = ../src/$(DESIGN).v
 	
-GL = \
-	../runs/RUN_2024-04-30_09-54-31/final/nl/comp32.nl.v
+RUN = ../runs/RUN_CONFIG2
 	
-TESTBENCH = \
-	../tb/tb_comp32.v
+SDF_CORNER = min_ss_100C_1v60
+	# Can be one of this:
+	#	max_ff_n40C_1v95
+	#	max_ss_100C_1v60
+	#	max_tt_025C_1v80
+	#	min_ff_n40C_1v95
+	#	min_ss_100C_1v60
+	#	min_tt_025C_1v80
+	#	nom_ff_n40C_1v95
+	#	nom_ss_100C_1v60
+	#	nom_tt_025C_1v80
+		
+GL = $(RUN)/final/nl/$(DESIGN).nl.v
+
+PGL = $(RUN)/final/pnl/$(DESIGN).pnl.v
+	
+TESTBENCH = ../tb/tb_$(DESIGN).v
 	
 CELL_LIBRARY = \
 	${PDK_ROOT}/sky130A/libs.ref/sky130_fd_sc_hd/verilog/sky130_fd_sc_hd.v \
 	${PDK_ROOT}/sky130A/libs.ref/sky130_fd_sc_hd/verilog/primitives.v
 
-comp32.vvp: $(TESTBENCH) $(RTL) 
-	iverilog -o $@ -s top $^ -D 'DUMP_FILE_NAME="comp32.vcd"'
+$(DESIGN).vvp: $(TESTBENCH) $(RTL) 
+	iverilog -o $@ -s top $^ -D 'DUMP_FILE_NAME="$(DESIGN).vcd"' -D FUNCTIONAL
 	
-comp32.vcd: comp32.vvp
+$(DESIGN).vcd: $(DESIGN).vvp
 	vvp $^ 
 	
-sim_comp32: comp32.vcd
+sim_$(DESIGN): $(DESIGN).vcd
 	gtkwave $^
 	
-comp32_gl.vvp: $(TESTBENCH) $(GL) $(CELL_LIBRARY) 
-	iverilog -o $@ -s top $^ -D 'DUMP_FILE_NAME="comp32_gl.vcd"' -DFUNCTIONAL
+$(DESIGN)_gl.vvp: $(TESTBENCH) $(GL) $(CELL_LIBRARY)
+	iverilog -o $@ -s top $^ -D 'DUMP_FILE_NAME="$(DESIGN)_gl.vcd"' -D FUNCTIONAL
 	
-comp32_gl.vcd: comp32_gl.vvp
+$(DESIGN)_gl.vcd: $(DESIGN)_gl.vvp
 	vvp $^ 
 	
-sim_comp32_gl: comp32_gl.vcd
+sim_$(DESIGN)_gl: $(DESIGN)_gl.vcd
 	gtkwave $^
 		
+$(DESIGN)_gl_sdf.vvp: $(TESTBENCH) $(PGL) $(CELL_LIBRARY) 
+	iverilog -o $@ -gspecify -ginterconnect -s top $^ -T min \
+		-D USE_POWER_PINS -D 'DUMP_FILE_NAME="$(DESIGN)_gl_sdf.vcd"' \
+		-D 'SDF_FILE_NAME="$(RUN)/final/sdf/$(SDF_CORNER)/$(DESIGN)__$(SDF_CORNER).sdf"'
 	
+$(DESIGN)_gl_sdf.vcd: $(DESIGN)_gl_sdf.vvp
+	vvp $^ 
+	
+sim_$(DESIGN)_gl_sdf: $(DESIGN)_gl_sdf.vcd
+	gtkwave $^
+	
+clean:
+	rm -f $(DESIGN).vvp $(DESIGN).vcd
 
+clean_gl:
+	rm -f $(DESIGN)_gl.vvp $(DESIGN)_gl.vcd
+
+clean_gl_sdf:
+	rm -f $(DESIGN)_gl_sdf.vvp $(DESIGN)_gl_sdf.vcd
+	
